@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<body onload="start()">
+    <img name="change" src="js_basic.png">
+
+    <script type="text/javascript" language="javascript">
+        var img_arr = new Array("js_basic.png", "react.png", "car.jpg", "node.png","typescript.png","aws.png");
+        var i = 1;
+        var ref;
+ //error here
+        function pic_library (){
+            
+             document.images[0].src = img_arr[i];
+             document.write(i++);
+             document.write("i"+i);
+            
+        }
+ 
+        function start(){    
+             ref = setInterval("pic_library()",1000);
+        }
+ 
+     </script>
+</body>
+</html>
