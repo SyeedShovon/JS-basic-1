@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit counter</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var count = 0;
+        var numb = parseInt(prompt("Enter the number","Numb"));
+
+        while(numb > 0 ){
+            numb = Math.trunc(numb / 10);
+            count++;
+        }
+
+        document.write("Total digits: "+count);
+    </script>
+</body>
+</html>
