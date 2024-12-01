@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit counter</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var actualPin = 3421;
+        var userPin,count=0 ;
+       do{
+            userPin = prompt("Enter pin","");
+            count++;
+        }while( actualPin != userPin && count<3)
+        if(actualPin==userPin){
+            document.write("Welcome Mr.Syeed");
+        }else{
+            document.write("Account Locked");
+        }
+    </script>
+</body>
+</html>
