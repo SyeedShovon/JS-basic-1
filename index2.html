@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- js object -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var obj_test = {
+            "name" : "Shovon",
+            "age" : 30,
+            "address" : "Malibagh"
+        }
+
+        document.write("<br>");
+        document.write("Name is : <b>"+obj_test.name+"</b><br>");
+        document.write("Age is : <b>"+obj_test.age+"</b><br>");
+        document.write("Address is : <b>"+obj_test.address+"</b><br>");
+        document.write("<br>");
+        document.write("Using Loop>");
+
+        var x;
+        var text = "";
+        for( x in obj_test){
+            text += obj_test[x] + " , ";
+        }
+
+        document.write(text);
+    </script>
+</body>
+</html>

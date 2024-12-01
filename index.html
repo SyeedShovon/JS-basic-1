@@ -7,7 +7,24 @@
     <title>JS Basic</title>
 </head>
 <body>
+    <form>
+        <input type="text" name="d1"><br>
+        <input type="text" name="d2"><br>
+        <input type="button" value="Click me" onclick="send_val(d1.value,d2.value)">
+        <br>
+    </form>
+
+
+
+
     <script type="text/javascript">
+        function send_val(name,age){
+            if(name=="" || age=="")
+            return; 
+            document.write("Hello "+name+", you are "+age+" years old");
+        }
+
+        document.write("<br>");
         var arr = new Array(5);
         arr[0] = 2;
         arr[1] = 3;
