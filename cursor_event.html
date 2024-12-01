@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit counter</title>
+</head>
+<body onload="onLoad()">
+    <img name="click_check" onmouseover="mouse_over()" onmouseout="mouse_out()">
+    <script type="text/javascript">
+        function onLoad(){
+            document.images["click_check"].src = "images.png";
+        }
+
+        function mouse_over(){
+            document.images["click_check"].src = "js_basic.png";
+        }
+
+        function mouse_out(){
+            document.images["click_check"].src = "images.png";
+        }
+    </script>
+</body>
+</html>
